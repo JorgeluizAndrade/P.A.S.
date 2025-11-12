@@ -1,0 +1,249 @@
+@import "tailwindcss";
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #ffffff; /* Um fundo cinza claro para destacar o card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+    color: #333;
+}
+
+
+a {
+  text-decoration: none;
+  color: #594c25;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+ul {
+  list-style: none;
+}
+
+.conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+/* .apresentacao {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+} */
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.cabecalho {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 1rem 0;
+  z-index: 10;
+}
+
+.menu-navegacao ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.conteiner-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.botao-amarelo {
+  background: #f5c339;
+  color: #594c25;
+}
+
+.botao-contorno {
+  border-color: #594c25;
+  color: #594c25;
+  background: transparent;
+}
+
+.marcador-circulo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.titulo-centralizado {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+  z-index: 1;
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 28px 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  max-width: 550px;
+  width: 100%;
+  box-sizing: border-box; /* Garante que o padding não estoure a largura */
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca4e;
+}
+
+.form-group {
+  margin-bottom: 28px;
+}
+
+.question-text {
+  display: block; 
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+}
+
+.hidden-radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-button {
+  display: inline-block;
+  padding: 8px 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fdfaf6; 
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.9rem;
+}
+
+.radio-button:hover {
+  background-color: #f9f4ec;
+  border-color: #c9c9c9;
+}
+
+.hidden-radio:checked + .radio-button {
+  background-color: #fef9e6; 
+  border-color: #f5c518; 
+  color: #222;
+  font-weight: 500;
+}
+
+.hidden-radio:focus + .radio-button {
+  box-shadow: 0 0 0 2px #f5c518;
+}
+
+.text-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fdfaf6;
+  font-size: 1rem;
+  box-sizing: border-box; 
+}
+
+.text-input::placeholder {
+  color: #aaa;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: #f5c518;
+  box-shadow: 0 0 0 2px #fef9e6;
+}
+
+.button-container {
+  text-align: right; 
+  margin-top: 32px;
+}
+
+.submit-btn {
+  background-color: #f5c518; 
+  color: #333;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e6b800; 
+}
