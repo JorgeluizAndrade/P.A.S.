@@ -50,8 +50,16 @@ html, body {
     font-weight: 500;
 }
 
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
 .join-btn {
-    background: #f4c43d;
+    /* background: #f4c43d; */
+    opacity: 0;
     padding: 10px 25px;
     border: none;
     border-radius: 8px;
